@@ -2,8 +2,8 @@ Redis:
   image: sameersbn/redis:latest
   ports:
     - "6379:6379"
-  volumes:
-    - /srv/docker/redis:/var/lib/redis:Z
+#  volumes:
+#    - /srv/docker/redis:/var/lib/redis:Z
   restart: always
 
 PostgreSQL:
@@ -17,5 +17,5 @@ PostgreSQL:
     - DB_USER=wang
     - DB_PASS=yunfei
     - DB_NAME=order
-  volumes:
-    - /srv/docker/postgresql:/var/lib/postgresql:Z
+#  volumes:
+#    - /srv/docker/postgresql:/var/lib/postgresql:Z

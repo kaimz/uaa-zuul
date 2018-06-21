@@ -12,12 +12,12 @@ spring:
       ddl-auto: update
   datasource:
     platform: postgres
-    url: jdbc:postgresql://192.168.1.140:5432/auth
+    url: jdbc:postgresql://127.0.0.1:5432/order
     username: wang
     password: yunfei
     driver-class-name: org.postgresql.Driver
   redis:
-    host: 192.168.1.140
+    host: 127.0.0.1
 
 server:
   port: 9999
